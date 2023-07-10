@@ -31,11 +31,9 @@ ol {
   padding-left: 0;
   margin: 0;
 }
-
 a {
   text-decoration: none;
 }
-
 img {
   display: block;
   max-width: 100%;
@@ -48,7 +46,63 @@ img {
   padding: 0 16px;
   margin: 0 auto;
 }
+/**-------HEADER-----**/
 
+.list {
+  list-style-type: none;
+}
+.link {
+  text-decoration: none;
+  color: var(--primary-text-color);
+}
+.header-logo {
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-left: 16px;
+}
+.header {
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+.header-menu {
+  display: flex;
+  gap: 24px;
+}
+.button {
+  display: flex;
+  border-radius: 30px;
+  background: var(--btn-color);
+  padding: 6px 18px;
+  border: none;
+  color: var(--primary-text-color, #2c2c2c);
+  text-align: right;
+  font-size: 13px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 150%;
+}
+.header-nav {
+  display: flex;
+  align-items: center;
+  flex-grow: 1;
+  justify-content: space-between;
+  color: var(--primary-text-color, #2c2c2c);
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+.header-container {
+  display: flex;
+  align-items: center;
+  gap: 30px;
+}
+.span {
+  color: var(--btn-color);
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  text-decoration-line: underline;
+}
 /* <-- Hero Yurii--> */
 /* <-- Offerings Anastasia--> */
 /* <-- Favorites Ivan--> */
