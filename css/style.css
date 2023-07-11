@@ -52,8 +52,7 @@ img {
 /*-----------OFFERINGS-----------*/
 
 .offerings {
-  padding-top: 177px;
-  padding-bottom: 79px;
+  background-color: var(--secondary-background-color);
 }
 
 .section {}
@@ -61,15 +60,14 @@ img {
 .offerings-container {
   display: flex;
   justify-content: space-between;
-  gap: 160px;
+  gap: 90px;
+}
+
+.offerings-img-container {
 }
 
 .offerings-img {
   margin-top: 177px;
-}
-
-.offerings-container {
-  padding: 260px 51px 151px 656px;
 }
 
 .offerings-title {
