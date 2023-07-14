@@ -55,14 +55,15 @@ img {
 /* <-- Customers Say Sergiy--> */
 
 /* <-- Subscribe Oleksiy--> */
-.subscribe {
-  padding-top: 46px;
-  padding-bottom: 170px;
-}
-.container {
-}
+
 .subscribe-container {
+  padding: 0;
+  background: url(../images/banan.png), lightgray 55px -0.372px / 89.803% 100.28% no-repeat;
+  background-repeat: no-repeat;
+  background-position: 640px 0;
+  background-size: 608px 266px;
 }
+
 .subscribe-title {
   color: var(--primary-text-color);
   font-family: Roboto;
@@ -71,6 +72,7 @@ img {
   font-weight: 700;
   line-height: 120%;
   padding-bottom: 20px;
+  padding-top: 46px;
 }
 .subscribe-text {
   color: var(--primary-text-color);
@@ -110,7 +112,8 @@ img {
   flex: 1 0 0;
   border-radius: 30px;
   border: 0.854px solid var(--yellow-main, #ffe550);
-  background: var(--white, #fefefe);
+  background-color: var(--white, #fefefe);
+  margin-bottom: 100px;
 }
 
 .form-input::placeholder {
