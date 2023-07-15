@@ -132,6 +132,10 @@ color: var(--link-color);
     border: 0.854px solid var(--btn-color);
     background: var(--white-color);
 }
+.footer-click:focus,
+.footer-click:hover {
+  background-color: var(--btn-color);
+}
 .footer-copyright {
   display: flex;
 }
