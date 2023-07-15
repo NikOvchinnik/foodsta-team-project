@@ -44,6 +44,11 @@ img {
 }
 
 /* *----Hero----- */
+.hero {
+  padding-top: 14px;
+  background-color: var(--background-color);
+}
+
 .hero-title {
   color: var(--primary-text-color);
   font-size: 48px;
@@ -91,10 +96,42 @@ img {
 
 .hero-wrap {
   display: flex;
+  gap: 169px;
 }
 
 .hero-img {
-  margin: 26px 40px;
   border-radius: 269px;
+}
+
+.hero-block {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 580px;
+  height: 580px;
+  border-radius: 50%;
+  border: 26px solid #FFE550;
+}
+
+.hero-arrow-btn {
+  width: 40px;
+  height: 48px;
+  background-color: var(--background-color);
+  border-radius: 8px;
+  transform: rotate(90deg);
+  border: none;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.06);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0;
+  cursor: pointer;
+}
+
+.icon-arrow {
+  width: 29.05px;
+  height: 16.42px;
+  fill: var(--primary-text-color);
+  transform: rotate(90deg);
 }
 
