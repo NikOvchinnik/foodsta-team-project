@@ -55,3 +55,107 @@ img {
 /* <-- Customers Say Sergiy--> */
 /* <-- Subscribe Oleksiy--> */
 /* <-- Footer Christina--> */
+.footer-content {
+  background:var(--white-color);
+    box-shadow: 0px -4px 24px 0px rgba(105, 105, 105, 0.10);
+    background-image: url(../images/footer-1.png),
+    url(../images/footer-2.png),
+    url(../images/footer-3.png),
+    url(../images/footer-4.png),
+    url(../images/footer-5.png),
+    url(../images/footer-6.png),
+    url(../images/footer-7.png),
+    url(../images/footer-8.png);
+    
+    
+    background-repeat: no-repeat;
+      background-position: bottom left 216px , bottom, bottom right 184px,
+       bottom left 53px, bottom right 362px, bottom left 410px, bottom, bottom right;
+     
+      
+}
+
+.logo-content {
+  display: flex;
+}
+.footer-logo {
+  margin-top: 100px;
+  margin-right: 148px;
+}
+
+.footer-nav-ul {
+display: flex;
+gap: 28px;
+}
+.footer-nav-li {
+  margin-top: 118px;
+margin-bottom: 147px;
+}
+.footer-nav-link {
+color: #2C2C2C;
+
+}
+.footer-nav-link:hover {
+  color: var(--link-color);
+} 
+
+.footer-nav-link:focus {
+color: var(--link-color);
+}
+
+.footer-form-content {
+  margin-left: auto;
+}
+.footer-form-tittle {
+  color: var(--black, #2C2C2C);
+  margin-bottom: 12px;
+}
+.footer-form {
+  margin-top: 100px;
+}
+.footer-input {
+  height: 42px;
+    padding: 12px 61.5px 12px 12px;
+    align-items: center;
+    flex-shrink: 0;
+     border-radius: 30px;
+    border: 0.854px solid var(--secondary-background-color);
+    background: var(--white-color);
+    margin-bottom: 12px;
+    margin-right: 13px;
+    min-width: 279px;
+}
+.footer-click {
+  padding: 11px 22px;
+  min-width: 103px;
+    justify-content: center;
+    align-items: center;
+    border-radius: 30px;
+    border: 0.854px solid var(--btn-color);
+    background: var(--white-color);
+}
+.footer-copyright {
+  display: flex;
+}
+.footer-copyright-ul {
+  display: flex;
+  gap: 20px;
+  
+}
+.footer-copyright-link {
+  color: var(--link-color);
+  font-size: 12px;
+line-height: normal;
+text-decoration-line: underline;
+}
+.footer-copyright-link:focus,
+.footer-copyright-link:hover {
+  color: var(--form-color);
+}
+
+.paragraph {
+  color: var(--primary-text-color);
+font-size: 12px;
+line-height: normal;
+margin-left: auto;
+}
