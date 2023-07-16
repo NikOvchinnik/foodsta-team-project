@@ -55,8 +55,6 @@ img {
   background-color: var(--secondary-background-color);
 }
 
-.section {}
-
 .offerings-container {
   display: flex;
   justify-content: space-between;
@@ -104,8 +102,6 @@ img {
   display: flex;
   gap: 67px;
 }
-
-.list {}
 
 .offerings-item {
   min-width: 253px;
