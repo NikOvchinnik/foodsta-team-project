@@ -67,10 +67,12 @@ img {
   width: 100%;
   padding-left: 16px;
   padding-bottom: 43px;
+  margin-top: 231px;
 }
 
 .offerings-img {
- padding-top: 177px;
+  margin: 0px 70px 102px 84px;
+  transform: translateY(-54px);
 }
 
 .offerings-title {
