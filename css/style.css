@@ -82,7 +82,7 @@ img {
   font-weight: 700;
   line-height: 1.2;
   margin-bottom: 20px;
-  min-width: 526px;
+  max-width: 526px;
   padding-top: 260px;
 }
 
@@ -109,7 +109,6 @@ img {
 
 .offerings-item {
   min-width: 253px;
-  padding-right: 51px;
 }
 
 .offerings-item-title {
