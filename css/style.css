@@ -64,10 +64,15 @@ img {
 }
 
 .offerings-img-container {
+  max-width: 550px;
+  max-height: 550px;
+  width: 100%;
+  padding-left: 16px;
+  padding-bottom: 43px;
 }
 
 .offerings-img {
-  margin-top: 177px;
+ padding-top: 177px;
 }
 
 .offerings-title {
@@ -88,7 +93,7 @@ img {
   font-weight: 400;
   line-height: 1.5;
   max-width: 500px;
-  margin-bottom: 40px;
+  margin-bottom: 96px;
   display: flex;
   width: 500px;
   flex-direction: column;
@@ -102,7 +107,10 @@ img {
 
 .list {}
 
-.offerings-item {}
+.offerings-item {
+  min-width: 253px;
+  padding-right: 51px;
+}
 
 .offerings-item-title {
   margin-bottom: 16px;
@@ -140,6 +148,7 @@ img {
   border: 2px solid var(--dark-green, #7EB101);
   background: #FFF;
   margin-top: 32px;
+  margin-bottom: 79px;
   min-width: 106px;
   height: 40px;
 }
