@@ -170,8 +170,109 @@ img {
   border-radius: 50%;
   border: 26px solid #FFE550;
 }
+
 /* <-- Offerings Anastasia--> */
+.offerings {
+  background-color: var(--secondary-background-color);
+}
+
+.offerings-container {
+  display: flex;
+  justify-content: space-between;
+  gap: 90px;
+}
+
+.offerings-img-container {
+  max-width: 550px;
+  max-height: 550px;
+  width: 100%;
+  padding-left: 16px;
+  padding-bottom: 43px;
+  margin-top: 231px;
+}
+
+.offerings-img {
+  margin: 0px 70px 102px 84px;
+  transform: translateY(-54px);
+}
+
+.offerings-title {
+  color: var(--black, #2C2C2C);
+  font-size: 42px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 1.2;
+  margin-bottom: 20px;
+  max-width: 526px;
+  padding-top: 260px;
+}
+
+.offerings-text {
+  color: var(--black, #2C2C2C);
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 1.5;
+  max-width: 500px;
+  margin-bottom: 96px;
+  display: flex;
+  width: 500px;
+  flex-direction: column;
+  flex-shrink: 0;
+}
+
+.offerings-list {
+  display: flex;
+  gap: 67px;
+}
+
+.offerings-item {
+  min-width: 253px;
+}
+
+.offerings-item-title {
+  margin-bottom: 16px;
+  color: var(--black, #2C2C2C);
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 1.4;
+}
+
+.offerings-item-text {
+  color: var(--black, #2C2C2C);
+  font-size: 14px;
+   width: 253px;
+  flex-direction: column;
+  flex-shrink: 0;
+}
+
+.offerings-btn {
+  color: var(--black, #2C2C2C);
+  font-family: Roboto;
+   display: inline-flex;
+  padding: 10px 22px;
+  justify-content: center;
+  align-items: center;
+  border-radius: 30px;
+  border: 2px solid var(--dark-green, #7EB101);
+  background: #FFF;
+  margin-top: 32px;
+  margin-bottom: 79px;
+  min-width: 106px;
+  height: 40px;
+}
+
+.offerings-btn:hover,
+.offerings-btn:focus {
+border-radius: 30px;
+background: #BBF330;
+border: none;
+}
+  
 /* <-- Favorites Ivan--> */
 /* <-- Customers Say Sergiy--> */
 /* <-- Subscribe Oleksiy--> */
 /* <-- Footer Christina--> */
+
+
