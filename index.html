@@ -24,13 +24,15 @@
     <header class="header">
       <div class="container header-container">
         <nav class="header-nav">
-        <a class="header-logo" href=""><img src="./images/logo.svg" alt="logo" width="66" height="52" /></a>
-          <ul class="header-menu list">
-            <li class="header-item"><a class="link" href="#"><span class="span">Home</span></a></li>
-            <li class="header-item"><a class="link" href="#">About</a></li>
-            <li class="header-item"><a class="link" href="#">Service</a></li>
-            <li class="header-item"><a class="link" href="#">Menu</a></li>
-            <li class="header-item"><a class="link" href="#">Contact</a></li>
+          <a class="header-logo" href="#"
+            ><img src="./images/logo.svg" alt="logo" width="66" height="52"
+          /></a>
+          <ul class="header-menu">
+            <li class="header-item"><a class="header-link" href="#">Home</a></li>
+            <li class="header-item"><a class="header-link" href="#">About</a></li>
+            <li class="header-item"><a class="header-link" href="#">Service</a></li>
+            <li class="header-item"><a class="header-link" href="#">Menu</a></li>
+            <li class="header-item"><a class="header-link" href="#">Contact</a></li>
           </ul>
         </nav>
         <button class="button" type="button">Order now</button>
@@ -54,9 +56,9 @@
       </div>
     </section>
     <!-- Offerings Anastasia-->
-     <section class="offerings section">
+    <section class="offerings">
       <div class="offerings-container container">
-        <div class="offerings-img-container container">
+        <div class="offerings-img-container">
           <img
             src="./images/apple.png"
             alt="Apple"
@@ -71,7 +73,7 @@
             With our platform, you can browse through a diverse selection of cuisines and local
             restaurants, and choose from a variety of dishes that cater to your specific taste buds.
           </p>
-          <ul class="offerings-list list">
+          <ul class="offerings-list">
             <li class="offerings-item">
               <h3 class="offerings-item-title">Fasest Delivery</h3>
               <p class="offerings-item-text">
@@ -101,46 +103,70 @@
           Order now and receive 10% off your first meal with Enjoy Your Favorite <br />
           Food From Anywhere.
         </p>
-        <fotm class="form">
+        <form class="form">
           <input class="form-input" type="text" placeholder="Enter your email" />
-          <button class="subscribe-btn" type="submit">Subscribe</button></fotm
-        >
+          <button class="subscribe-btn" type="submit">Subscribe</button>
+        </form>
       </div>
     </section>
-     <!-- Footer Kristina-->
-  <footer class="footer-content">
-    <div class="container">
-      <div class="logo-content">
-        <a class="footer-logo" href="#home"><img src="./images/logo.svg" alt="logo" width="66" height="52"></a>
-        <nav class="footer-nav">
-          <ul class="footer-nav-ul">
-            <li class="footer-nav-li"><a class="footer-nav-link" href="#" target="_blank">Home</a></li>
-            <li class="footer-nav-li"><a class="footer-nav-link" href="#" target="_blank">About</a></li>
-            <li class="footer-nav-li"><a class="footer-nav-link" href="#" target="_blank">Service</a></li>
-            <li class="footer-nav-li"><a class="footer-nav-link" href="#" target="_blank">Menu</a></li>
-            <li class="footer-nav-li"><a class="footer-nav-link" href="#contact" target="_blank">Contact</a></li>
+    <!-- Footer Christina-->
+    <footer class="footer-content">
+      <div class="container">
+        <div class="logo-content">
+          <a class="footer-logo" href="#home"
+            ><img src="./images/logo.svg" alt="logo" width="66" height="52"
+          /></a>
+          <nav class="footer-nav">
+            <ul class="footer-nav-ul">
+              <li class="footer-nav-li">
+                <a class="footer-nav-link" href="#" target="_blank">Home</a>
+              </li>
+              <li class="footer-nav-li">
+                <a class="footer-nav-link" href="#" target="_blank">About</a>
+              </li>
+              <li class="footer-nav-li">
+                <a class="footer-nav-link" href="#" target="_blank">Service</a>
+              </li>
+              <li class="footer-nav-li">
+                <a class="footer-nav-link" href="#" target="_blank">Menu</a>
+              </li>
+              <li class="footer-nav-li">
+                <a class="footer-nav-link" href="#" target="_blank">Contact</a>
+              </li>
+            </ul>
+          </nav>
+          <div class="footer-form-content">
+            <form class="footer-form">
+              <h2 class="footer-form-tittle">Subscribe</h2>
+              <input class="footer-input" type="text" placeholder="Enter your email" />
+              <button class="footer-click" type="submit">Subscribe</button>
+            </form>
+            <p>
+              By subscribing you agree to with our<a
+                class="footer-copyright-link"
+                href=""
+                target="_blank"
+              >
+                Privacy Policy</a
+              >
+            </p>
+          </div>
+        </div>
+        <div class="footer-copyright">
+          <ul class="footer-copyright-ul">
+            <li class="">
+              <a class="footer-copyright-link" href="#" target="_blank">Privacy Policy</a>
+            </li>
+            <li class="">
+              <a class="footer-copyright-link" href="#" target="_blank">Terms of Service</a>
+            </li>
+            <li class="">
+              <a class="footer-copyright-link" href="#" target="_blank">Cookies Settings</a>
+            </li>
           </ul>
-        </nav>
-
-        <div class="footer-form-content">
-          <form class="footer-form">
-            <h2 class="footer-form-tittle">Subscribe</h2>
-            <input class="footer-input" type="text" placeholder="Enter your email">
-            <button class="footer-click" type="submit">Subscribe</button>
-          </form>
-          <p>By subscribing you agree to with our<a class="footer-copyright-link" href="" target="_blank"> Privacy
-              Policy</a></p>
+          <p class="paragraph">2022 FoodSta. All right reserved.</p>
         </div>
       </div>
-      <div class="footer-copyright">
-        <ul class="footer-copyright-ul">
-          <li class=""><a class="footer-copyright-link" href="" target="_blank">Privacy Policy</a></li>
-          <li class=""><a class="footer-copyright-link" href="" target="_blank">Terms of Service</a></li>
-          <li class=""><a class="footer-copyright-link" href="" target="_blank">Cookies Settings</a></li>
-        </ul>
-        <p class="paragraph">2022 FoodSta. All right reserved.</p>
-      </div>
-    </div>
-  </footer>
+    </footer>
   </body>
 </html>

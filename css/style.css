@@ -47,13 +47,9 @@ img {
   margin: 0 auto;
 }
 
-/**-------HEADER-----**/
+/**-------Header Artem-----**/
 
-.list {
-  list-style-type: none;
-}
-.link {
-  text-decoration: none;
+.header-link {
   color: var(--primary-text-color);
 }
 .header-logo {
@@ -93,15 +89,8 @@ img {
   align-items: center;
   gap: 30px;
 }
-.span {
-  color: var(--btn-color);
-  font-style: normal;
-  font-weight: 700;
-  line-height: normal;
-  text-decoration-line: underline;
-}
 
-/* *----Hero----- */
+/**-------Hero Yurii-----**/
 .hero {
   padding-top: 14px;
   background-color: var(--background-color);
@@ -147,7 +136,7 @@ img {
   padding: 6px 18px;
   display: block;
   border-radius: 30px;
-  background-color: #BBF330;
+  background-color: #bbf330;
   justify-content: center;
   align-items: center;
 }
@@ -168,10 +157,11 @@ img {
   width: 580px;
   height: 580px;
   border-radius: 50%;
-  border: 26px solid #FFE550;
+  border: 26px solid #ffe550;
 }
 
-/* <-- Offerings Anastasia--> */
+/**-------Offerings Anastasia-----**/
+
 .offerings {
   background-color: var(--secondary-background-color);
 }
@@ -197,7 +187,7 @@ img {
 }
 
 .offerings-title {
-  color: var(--black, #2C2C2C);
+  color: var(--black, #2c2c2c);
   font-size: 42px;
   font-style: normal;
   font-weight: 700;
@@ -208,7 +198,7 @@ img {
 }
 
 .offerings-text {
-  color: var(--black, #2C2C2C);
+  color: var(--black, #2c2c2c);
   font-size: 16px;
   font-style: normal;
   font-weight: 400;
@@ -232,7 +222,7 @@ img {
 
 .offerings-item-title {
   margin-bottom: 16px;
-  color: var(--black, #2C2C2C);
+  color: var(--black, #2c2c2c);
   font-size: 18px;
   font-style: normal;
   font-weight: 700;
@@ -240,23 +230,23 @@ img {
 }
 
 .offerings-item-text {
-  color: var(--black, #2C2C2C);
+  color: var(--black, #2c2c2c);
   font-size: 14px;
-   width: 253px;
+  width: 253px;
   flex-direction: column;
   flex-shrink: 0;
 }
 
 .offerings-btn {
-  color: var(--black, #2C2C2C);
+  color: var(--black, #2c2c2c);
   font-family: Roboto;
-   display: inline-flex;
+  display: inline-flex;
   padding: 10px 22px;
   justify-content: center;
   align-items: center;
   border-radius: 30px;
-  border: 2px solid var(--dark-green, #7EB101);
-  background: #FFF;
+  border: 2px solid var(--dark-green, #7eb101);
+  background: #fff;
   margin-top: 32px;
   margin-bottom: 79px;
   min-width: 106px;
@@ -265,16 +255,14 @@ img {
 
 .offerings-btn:hover,
 .offerings-btn:focus {
-border-radius: 30px;
-background: #BBF330;
-border: none;
+  border-radius: 30px;
+  background: #bbf330;
+  border: none;
 }
-  
-/* <-- Favorites Ivan--> */
-/* <-- Customers Say Sergiy--> */
+/**-------Favorites Ivan-----**/
+/**-------Customers Say Sergiy-----**/
 
-/* <-- Subscribe Oleksiy--> */
-
+/**-------Subscribe Oleksiy-----**/
 .subscribe-container {
   padding: 0;
   background: url(../images/banan.png), lightgray 55px -0.372px / 89.803% 100.28% no-repeat;
@@ -343,24 +331,16 @@ border: none;
   font-weight: 400;
   line-height: 150%;
 }
-
-/* <-- Footer Christina--> */
+/**-------Footer Christina-----**/
 .footer-content {
-  background:var(--white-color);
-    box-shadow: 0px -4px 24px 0px rgba(105, 105, 105, 0.10);
-    background-image: url(../images/footer-1.png),
-    url(../images/footer-2.png),
-    url(../images/footer-3.png),
-    url(../images/footer-4.png),
-    url(../images/footer-5.png),
-    url(../images/footer-6.png),
-    url(../images/footer-7.png),
-    url(../images/footer-8.png);
-    background-repeat: no-repeat;
-      background-position: bottom left 216px , bottom, bottom right 184px,
-       bottom left 53px, bottom right 362px, bottom left 410px, bottom, bottom right;
-     
-      
+  background: var(--white-color);
+  box-shadow: 0px -4px 24px 0px rgba(105, 105, 105, 0.1);
+  background-image: url(../images/footer-1.png), url(../images/footer-2.png),
+    url(../images/footer-3.png), url(../images/footer-4.png), url(../images/footer-5.png),
+    url(../images/footer-6.png), url(../images/footer-7.png), url(../images/footer-8.png);
+  background-repeat: no-repeat;
+  background-position: bottom left 216px, bottom, bottom right 184px, bottom left 53px,
+    bottom right 362px, bottom left 410px, bottom, bottom right;
 }
 
 .logo-content {
@@ -372,30 +352,29 @@ border: none;
 }
 
 .footer-nav-ul {
-display: flex;
-gap: 28px;
+  display: flex;
+  gap: 28px;
 }
 .footer-nav-li {
   margin-top: 118px;
-margin-bottom: 147px;
+  margin-bottom: 147px;
 }
 .footer-nav-link {
-color: #2C2C2C;
-
+  color: #2c2c2c;
 }
 .footer-nav-link:hover {
   color: var(--link-color);
-} 
+}
 
 .footer-nav-link:focus {
-color: var(--link-color);
+  color: var(--link-color);
 }
 
 .footer-form-content {
   margin-left: auto;
 }
 .footer-form-tittle {
-  color: var(--black, #2C2C2C);
+  color: var(--black, #2c2c2c);
   margin-bottom: 12px;
 }
 .footer-form {
@@ -403,24 +382,24 @@ color: var(--link-color);
 }
 .footer-input {
   height: 42px;
-    padding: 12px 61.5px 12px 12px;
-    align-items: center;
-    flex-shrink: 0;
-     border-radius: 30px;
-    border: 0.854px solid var(--secondary-background-color);
-    background: var(--white-color);
-    margin-bottom: 12px;
-    margin-right: 13px;
-    min-width: 279px;
+  padding: 12px 61.5px 12px 12px;
+  align-items: center;
+  flex-shrink: 0;
+  border-radius: 30px;
+  border: 0.854px solid var(--secondary-background-color);
+  background: var(--white-color);
+  margin-bottom: 12px;
+  margin-right: 13px;
+  min-width: 279px;
 }
 .footer-click {
   padding: 11px 22px;
   min-width: 103px;
-    justify-content: center;
-    align-items: center;
-    border-radius: 30px;
-    border: 0.854px solid var(--btn-color);
-    background: var(--white-color);
+  justify-content: center;
+  align-items: center;
+  border-radius: 30px;
+  border: 0.854px solid var(--btn-color);
+  background: var(--white-color);
 }
 .footer-click:focus,
 .footer-click:hover {
@@ -432,13 +411,12 @@ color: var(--link-color);
 .footer-copyright-ul {
   display: flex;
   gap: 20px;
-  
 }
 .footer-copyright-link {
   color: var(--link-color);
   font-size: 12px;
-line-height: normal;
-text-decoration-line: underline;
+  line-height: normal;
+  text-decoration-line: underline;
 }
 .footer-copyright-link:focus,
 .footer-copyright-link:hover {
@@ -447,8 +425,7 @@ text-decoration-line: underline;
 
 .paragraph {
   color: var(--primary-text-color);
-font-size: 12px;
-line-height: normal;
-margin-left: auto;
+  font-size: 12px;
+  line-height: normal;
+  margin-left: auto;
 }
-
