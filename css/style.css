@@ -1,10 +1,15 @@
 :root {
   --primary-text-color: #2c2c2c;
   --background-color: #fefefe;
+  --secondary-background-color: #ffe550;
+  --btn-color: #bbf330;
+  --link-color: #7eb101;
+  --form-color: #505050;
+  --white-color: #ffffff;
 }
 
 body {
-  font-family: "Roboto", sans-serif;
+  font-family: 'Roboto', sans-serif;
   font-size: 14px;
   color: var(--primary-text-color);
   background-color: var(--background-color);
@@ -26,11 +31,9 @@ ol {
   padding-left: 0;
   margin: 0;
 }
-
 a {
   text-decoration: none;
 }
-
 img {
   display: block;
   max-width: 100%;
@@ -38,9 +41,64 @@ img {
 }
 
 .container {
+  width: 100%;
   max-width: 1280px;
   padding: 0 16px;
   margin: 0 auto;
+}
+
+/**-------HEADER-----**/
+
+.list {
+  list-style-type: none;
+}
+.link {
+  text-decoration: none;
+  color: var(--primary-text-color);
+}
+.header-logo {
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-left: 16px;
+}
+.header {
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+.header-menu {
+  display: flex;
+  gap: 24px;
+}
+.button {
+  display: flex;
+  border-radius: 30px;
+  background: var(--btn-color);
+  padding: 6px 18px;
+  border: none;
+  color: var(--primary-text-color, #2c2c2c);
+  line-height: 150%;
+}
+.header-nav {
+  display: flex;
+  align-items: center;
+  flex-grow: 1;
+  justify-content: space-between;
+  color: var(--primary-text-color, #2c2c2c);
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+.header-container {
+  display: flex;
+  align-items: center;
+  gap: 30px;
+}
+.span {
+  color: var(--btn-color);
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  text-decoration-line: underline;
 }
 
 /* *----Hero----- */
@@ -112,6 +170,8 @@ img {
   border-radius: 50%;
   border: 26px solid #FFE550;
 }
-
-
-
+/* <-- Offerings Anastasia--> */
+/* <-- Favorites Ivan--> */
+/* <-- Customers Say Sergiy--> */
+/* <-- Subscribe Oleksiy--> */
+/* <-- Footer Christina--> */
