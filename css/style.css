@@ -272,7 +272,78 @@ border: none;
   
 /* <-- Favorites Ivan--> */
 /* <-- Customers Say Sergiy--> */
+
 /* <-- Subscribe Oleksiy--> */
+
+.subscribe-container {
+  padding: 0;
+  background: url(../images/banan.png), lightgray 55px -0.372px / 89.803% 100.28% no-repeat;
+  background-repeat: no-repeat;
+  background-position: 640px 0;
+  background-size: 608px 266px;
+}
+
+.subscribe-title {
+  color: var(--primary-text-color);
+  font-family: Roboto;
+  font-size: 42px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 120%;
+  padding-bottom: 20px;
+  padding-top: 46px;
+}
+.subscribe-text {
+  color: var(--primary-text-color);
+  font-family: Roboto;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 150%;
+  padding-bottom: 24px;
+}
+.subscribe-btn {
+  color: var(--primary-text-color);
+  font-family: Roboto;
+  font-size: 13px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 150%;
+  display: inline-flex;
+  padding: 11px 22px;
+  cursor: pointer;
+  justify-content: center;
+  align-items: center;
+  border-radius: 30px;
+  border: var(--button-green, #bbf330);
+  background-color: var(--button-green, #bbf330);
+  margin-left: 32px;
+}
+.subscribe-btn:hover,
+:focus {
+  background-color: #ffe450;
+  border: #ffe450;
+}
+.form-input {
+  height: 42px;
+  padding: 12px 57px 12px 12px;
+  align-items: center;
+  flex: 1 0 0;
+  border-radius: 30px;
+  border: 0.854px solid var(--yellow-main, #ffe550);
+  background-color: var(--white, #fefefe);
+  margin-bottom: 100px;
+}
+
+.form-input::placeholder {
+  color: var(--form-color);
+  font-family: Roboto;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 150%;
+}
+
 /* <-- Footer Christina--> */
 
 
