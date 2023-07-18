@@ -51,15 +51,29 @@ img {
 .header {
   box-shadow: 0px 4px 24px 0px rgba(105, 105, 105, 0.10);
 }
+
+.header-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.header-nav {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-left: auto;
+}
+
 .header-link {
   color: var(--primary-text-color);
+  padding-top: 28px;
+  padding-bottom: 28px;
 }
 
 .header-logo {
   padding-top: 10px;
   padding-bottom: 10px;
-  width: 66px;
-  height: 52px;
 }
 
 .header-menu {
@@ -74,7 +88,7 @@ img {
   background: var(--btn-color);
   padding: 6px 18px;
   border: none;
-  color: var(--primary-text-color, #2c2c2c);
+  color: var(--primary-text-color);
   font-size: 13px;
   font-weight: 500;
   line-height: 1.5;
@@ -84,27 +98,21 @@ img {
   font-family: inherit;
   min-width: 98px;
 }
-.header-nav {
-  display: flex;
-  align-items: center;
-  margin-left: auto;
-}
-
-.header-container {
-  display: flex;
-  align-items: center;
-}
 
 /**-------Hero Yurii-----**/
 .hero {
   padding-top: 14px;
+  padding-bottom: 40px;
+}
+
+.hero-content {
+  padding-top: 159px;
 }
 
 .hero-title {
   font-size: 48px;
   line-height: 1.2;
   max-width: 502.417px;
-  padding-top: 159px;
   margin-bottom: 28px;
 }
 
@@ -154,12 +162,12 @@ img {
 
 .offerings {
   background-color: var(--secondary-background-color);
+  padding-top: 43px;
+  padding-bottom: 43px;
 }
 
 .offerings-container {
   display: flex;
-  padding-top: 84px;
-  padding-bottom: 43px;
 }
 
 .offerings-img-border {
@@ -180,7 +188,7 @@ border: 5px solid rgba(255, 255, 255, 0.50);
 }
 
 .offerings-text-container {
-  padding-top: 113px;
+  padding-top: 72px;
   margin-left: auto;
 }
 
@@ -242,9 +250,12 @@ border: 5px solid rgba(255, 255, 255, 0.50);
 /**-------Customers Say Sergiy-----**/
 /**-------Subscribe Oleksiy-----**/
 
+.subscribe {
+  padding-bottom: 64px;
+}
+
 .subscribe-container {
   display: flex;
-  padding-bottom: 64px;
 }
 
 .subscribe-text-container {
@@ -303,27 +314,32 @@ border: 5px solid rgba(255, 255, 255, 0.50);
 }
 
 .subscribe-img-container {
-  width: 608px;
-  height: 266px;
   margin-left: auto;
 }
 
 
 /**-------Footer Christina-----**/
-.footer-content {
-  padding-top: 100px;
-  padding-bottom: 100px;
+.footer {
   background: var(--white-color);
   box-shadow: 0px -4px 24px 0px rgba(105, 105, 105, 0.1);
-  background-image: url(../images/footer-1.png), url(../images/footer-2.png),
-    url(../images/footer-3.png), url(../images/footer-4.png), url(../images/footer-5.png),
-    url(../images/footer-6.png), url(../images/footer-7.png), url(../images/footer-8.png);
-  background-repeat: no-repeat;
-  background-position: bottom left 216px, bottom, bottom right 184px, bottom left 53px,
-    bottom right 362px, bottom left 410px, bottom, bottom right;
+  padding-top: 100px;
 }
 
 .footer-container {
+  max-width: 1248px;
+  padding-bottom: 100px;
+  margin: 0 auto;
+  background: var(--white-color);
+  background-image: url(../images/footer-1.png), url(../images/footer-2.png),
+    url(../images/footer-3.png), url(../images/footer-7.png), url(../images/footer-4.png), url(../images/footer-5.png),
+    url(../images/footer-6.png), url(../images/footer-8.png);
+  background-repeat: no-repeat;
+  block-size: cover;
+  background-position: bottom left 216px, bottom left 340px, bottom right 134px, bottom right 450px, bottom left 53px,
+    bottom right 282px, bottom left 280px, bottom right 16px;
+}
+
+.footer-content {
   display: flex;
 }
 
@@ -348,10 +364,7 @@ border: 5px solid rgba(255, 255, 255, 0.50);
   color: var(--primary-text-color);
 }
 
-.footer-nav-link:hover {
-  color: var(--link-color);
-}
-
+.footer-nav-link:hover,
 .footer-nav-link:focus {
   color: var(--link-color);
 }
@@ -378,7 +391,7 @@ border: 5px solid rgba(255, 255, 255, 0.50);
   min-width: 279px;
 }
 
-.footer-click {
+.footer-btn {
   padding: 11px 22px;
   min-width: 103px;
   justify-content: center;
@@ -426,6 +439,5 @@ border: 5px solid rgba(255, 255, 255, 0.50);
 .paragraph {
   color: var(--primary-text-color);
   font-size: 12px;
-  line-height: normal;
   margin-left: auto;
 }
