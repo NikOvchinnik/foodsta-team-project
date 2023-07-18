@@ -54,7 +54,7 @@ img {
 /* <-- Favorites Ivan--> */
 /* <-- Customers Say Sergiy--> */
 /* <-- Subscribe Oleksiy--> */
-/* <-- Footer Christina--> */
+/* <-- Footer Kristina--> */
 .footer-content {
   background:var(--white-color);
     box-shadow: 0px -4px 24px 0px rgba(105, 105, 105, 0.10);
@@ -68,9 +68,7 @@ img {
     url(../images/footer-8.png);
     background-repeat: no-repeat;
       background-position: bottom left 216px , bottom, bottom right 184px,
-       bottom left 53px, bottom right 362px, bottom left 410px, bottom, bottom right;
-     
-      
+       bottom left 53px, bottom right 362px, bottom left 410px, bottom, bottom right;   
 }
 
 .logo-content {
@@ -91,7 +89,7 @@ margin-bottom: 147px;
 }
 .footer-nav-link {
 color: #2C2C2C;
-
+transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .footer-nav-link:hover {
   color: var(--link-color);
@@ -131,10 +129,11 @@ color: var(--link-color);
     border-radius: 30px;
     border: 0.854px solid var(--btn-color);
     background: var(--white-color);
+    transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .footer-click:focus,
 .footer-click:hover {
-  background-color: var(--btn-color);
+  border-color: var(--secondary-background-color);
 }
 .footer-copyright {
   display: flex;
@@ -153,6 +152,7 @@ text-decoration-line: underline;
 .footer-copyright-link:focus,
 .footer-copyright-link:hover {
   color: var(--form-color);
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .paragraph {
