@@ -48,102 +48,91 @@ img {
 }
 
 /**-------Header Artem-----**/
-
+.header {
+  box-shadow: 0px 4px 24px 0px rgba(105, 105, 105, 0.10);
+}
 .header-link {
   color: var(--primary-text-color);
 }
+
 .header-logo {
   padding-top: 10px;
   padding-bottom: 10px;
-  padding-left: 16px;
+  width: 66px;
+  height: 52px;
 }
-.header {
-  padding-top: 10px;
-  padding-bottom: 10px;
-}
+
 .header-menu {
   display: flex;
-  gap: 24px;
+  gap: 28px;
+  margin-right: 30px;
 }
-.button {
+
+.header-button {
   display: flex;
   border-radius: 30px;
   background: var(--btn-color);
   padding: 6px 18px;
   border: none;
   color: var(--primary-text-color, #2c2c2c);
-  line-height: 150%;
+  font-size: 13px;
+  font-weight: 500;
+  line-height: 1.5;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  font-family: inherit;
+  min-width: 98px;
 }
 .header-nav {
   display: flex;
   align-items: center;
-  flex-grow: 1;
-  justify-content: space-between;
-  color: var(--primary-text-color, #2c2c2c);
-  font-style: normal;
-  font-weight: 400;
-  line-height: normal;
+  margin-left: auto;
 }
+
 .header-container {
   display: flex;
   align-items: center;
-  gap: 30px;
 }
 
 /**-------Hero Yurii-----**/
 .hero {
   padding-top: 14px;
-  background-color: var(--background-color);
 }
 
 .hero-title {
-  color: var(--primary-text-color);
   font-size: 48px;
-  font-style: normal;
-  font-weight: 700;
   line-height: 1.2;
   max-width: 502.417px;
-  display: flex;
-  flex-direction: column;
-  flex-shrink: 0;
   padding-top: 159px;
   margin-bottom: 28px;
 }
 
 .hero-text {
-  color: var(--primary-text-color);
   font-size: 16px;
-  font-style: normal;
-  font-weight: 400;
   line-height: 1.5;
-  display: flex;
   max-width: 511px;
-  height: 69px;
-  flex-direction: column;
-  flex-shrink: 0;
   margin-bottom: 40px;
 }
 
 .hero-btn {
   color: var(--primary-text-color);
-  text-align: right;
   font-size: 13px;
-  font-style: normal;
+  font-family: inherit;
   font-weight: 500;
   line-height: 1.5;
   cursor: pointer;
   border: none;
   padding: 6px 18px;
-  display: block;
   border-radius: 30px;
-  background-color: #bbf330;
+  background-color: var(--btn-color);
   justify-content: center;
   align-items: center;
+  min-width: 98px;
 }
 
 .hero-wrap {
   display: flex;
-  gap: 169px;
 }
 
 .hero-img {
@@ -157,7 +146,8 @@ img {
   width: 580px;
   height: 580px;
   border-radius: 50%;
-  border: 26px solid #ffe550;
+  border: 26px solid var(--secondary-background-color);
+  margin-left: auto;
 }
 
 /**-------Offerings Anastasia-----**/
@@ -168,47 +158,44 @@ img {
 
 .offerings-container {
   display: flex;
-  justify-content: space-between;
-  gap: 90px;
+  padding-top: 84px;
+  padding-bottom: 43px;
+}
+
+.offerings-img-border {
+width: 550px;
+height: 550px;
+display: flex;
+align-items: center;
+justify-content: center;
+border-radius: 550px;
+border: 5px solid rgba(255, 255, 255, 0.50);
 }
 
 .offerings-img-container {
-  max-width: 550px;
-  max-height: 550px;
-  width: 100%;
-  padding-left: 16px;
-  padding-bottom: 43px;
-  margin-top: 231px;
+  background-color: var(--background-color);
+  border-radius: 502px;
+  width: 502px;
+  height: 502px;
 }
 
-.offerings-img {
-  margin: 0px 70px 102px 84px;
-  transform: translateY(-54px);
+.offerings-text-container {
+  padding-top: 113px;
+  margin-left: auto;
 }
 
 .offerings-title {
-  color: var(--black, #2c2c2c);
   font-size: 42px;
-  font-style: normal;
-  font-weight: 700;
   line-height: 1.2;
   margin-bottom: 20px;
   max-width: 526px;
-  padding-top: 260px;
 }
 
 .offerings-text {
-  color: var(--black, #2c2c2c);
   font-size: 16px;
-  font-style: normal;
-  font-weight: 400;
   line-height: 1.5;
   max-width: 500px;
   margin-bottom: 96px;
-  display: flex;
-  width: 500px;
-  flex-direction: column;
-  flex-shrink: 0;
 }
 
 .offerings-list {
@@ -216,123 +203,116 @@ img {
   gap: 67px;
 }
 
-.offerings-item {
-  min-width: 253px;
-}
-
 .offerings-item-title {
   margin-bottom: 16px;
-  color: var(--black, #2c2c2c);
   font-size: 18px;
-  font-style: normal;
-  font-weight: 700;
   line-height: 1.4;
+  width: 253px
 }
 
 .offerings-item-text {
-  color: var(--black, #2c2c2c);
-  font-size: 14px;
   width: 253px;
-  flex-direction: column;
-  flex-shrink: 0;
+  line-height: 1.5;
+  margin-bottom: 32px;
 }
 
 .offerings-btn {
-  color: var(--black, #2c2c2c);
-  font-family: Roboto;
-  display: inline-flex;
+  color: var(--primary-text-color);
+  font-family: inherit;
   padding: 10px 22px;
+  font-size: 13px;
+  font-weight: 500;
+  line-height: 1,5;
   justify-content: center;
   align-items: center;
   border-radius: 30px;
-  border: 2px solid var(--dark-green, #7eb101);
-  background: #fff;
-  margin-top: 32px;
-  margin-bottom: 79px;
+  border: 2px solid var(--link-color);
+  background: var(--white-color);
   min-width: 106px;
-  height: 40px;
+  cursor: pointer;
 }
 
 .offerings-btn:hover,
 .offerings-btn:focus {
-  border-radius: 30px;
-  background: #bbf330;
+  background: var(--btn-color);
   border: none;
 }
+
 /**-------Favorites Ivan-----**/
 /**-------Customers Say Sergiy-----**/
-
 /**-------Subscribe Oleksiy-----**/
+
 .subscribe-container {
-  padding: 0;
-  background: url(../images/banan.png), lightgray 55px -0.372px / 89.803% 100.28% no-repeat;
-  background-repeat: no-repeat;
-  background-position: 640px 0;
-  background-size: 608px 266px;
+  display: flex;
+  padding-bottom: 64px;
+}
+
+.subscribe-text-container {
+  padding-top: 46px;
 }
 
 .subscribe-title {
-  color: var(--primary-text-color);
-  font-family: Roboto;
   font-size: 42px;
-  font-style: normal;
-  font-weight: 700;
-  line-height: 120%;
-  padding-bottom: 20px;
-  padding-top: 46px;
+  line-height: 1.2;
+  margin-bottom: 20px;
 }
+
 .subscribe-text {
-  color: var(--primary-text-color);
-  font-family: Roboto;
   font-size: 16px;
-  font-style: normal;
-  font-weight: 400;
-  line-height: 150%;
-  padding-bottom: 24px;
+  line-height: 1.5;
+  margin-bottom: 24px;
 }
+
 .subscribe-btn {
   color: var(--primary-text-color);
-  font-family: Roboto;
+  font-family: inherit;
   font-size: 13px;
-  font-style: normal;
   font-weight: 500;
-  line-height: 150%;
-  display: inline-flex;
+  line-height: 1.5;
   padding: 11px 22px;
   cursor: pointer;
   justify-content: center;
   align-items: center;
   border-radius: 30px;
-  border: var(--button-green, #bbf330);
-  background-color: var(--button-green, #bbf330);
-  margin-left: 32px;
+  border: none;
+  background-color: var(--btn-color);
+  min-width: 103px;
 }
+
 .subscribe-btn:hover,
 :focus {
-  background-color: #ffe450;
-  border: #ffe450;
+  background-color: var(--secondary-background-color);
 }
+
 .form-input {
   height: 42px;
+  min-width: 395px;
   padding: 12px 57px 12px 12px;
   align-items: center;
-  flex: 1 0 0;
   border-radius: 30px;
-  border: 0.854px solid var(--yellow-main, #ffe550);
-  background-color: var(--white, #fefefe);
-  margin-bottom: 100px;
+  border: 0.854px solid var(--secondary-background-color);
+  background-color: var(--background-color);
+  margin-right: 32px;
 }
 
 .form-input::placeholder {
   color: var(--form-color);
   font-family: Roboto;
   font-size: 12px;
-  font-style: normal;
-  font-weight: 400;
-  line-height: 150%;
+  line-height: 1.5;
 }
+
+.subscribe-img-container {
+  width: 608px;
+  height: 266px;
+  margin-left: auto;
+}
+
+
 /**-------Footer Christina-----**/
 .footer-content {
+  padding-top: 100px;
+  padding-bottom: 100px;
   background: var(--white-color);
   box-shadow: 0px -4px 24px 0px rgba(105, 105, 105, 0.1);
   background-image: url(../images/footer-1.png), url(../images/footer-2.png),
@@ -346,22 +326,22 @@ img {
 .logo-content {
   display: flex;
 }
+
 .footer-logo {
-  margin-top: 100px;
   margin-right: 148px;
+  width: 66px;
+  height: 52px;
 }
 
 .footer-nav-ul {
   display: flex;
   gap: 28px;
 }
-.footer-nav-li {
-  margin-top: 118px;
-  margin-bottom: 147px;
-}
+
 .footer-nav-link {
   color: #2c2c2c;
 }
+
 .footer-nav-link:hover {
   color: var(--link-color);
 }
@@ -377,9 +357,7 @@ img {
   color: var(--black, #2c2c2c);
   margin-bottom: 12px;
 }
-.footer-form {
-  margin-top: 100px;
-}
+
 .footer-input {
   height: 42px;
   padding: 12px 61.5px 12px 12px;
