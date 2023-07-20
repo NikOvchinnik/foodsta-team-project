@@ -250,8 +250,7 @@ border: 5px solid rgba(255, 255, 255, 0.50);
 /**-------Customers Say Kristina-----**/
 
 .customers {
-  background: var(--white-color);
-  background-image: url(../images/super-yellow.png);
+  background: var(--secondary-background-color);
   
 }
 .customers-tittle {
@@ -260,6 +259,8 @@ border: 5px solid rgba(255, 255, 255, 0.50);
     font-weight: 700;
     line-height: normal;
     margin-bottom: 20px;
+    padding-top: 100px;
+    
 }
 .customers-text {
   color: var(--primary-text-color);
@@ -274,15 +275,21 @@ border: 5px solid rgba(255, 255, 255, 0.50);
     display: inline-block;
     margin-bottom: 100px;
     margin-right: 110px;
-   
-}
-.customers-say {
   color: var(--primary-text-color);
     font-size: 18px;
     font-weight: 700;
     line-height: normal;
 }
-
+.stars-icons {
+margin-bottom: 28px;
+}
+.customers-cont {
+  margin-top: 44px;
+  
+}
+.customers-name {
+  
+}
 
 /**-------Subscribe Oleksiy-----**/
 
