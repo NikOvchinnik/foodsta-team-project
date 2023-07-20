@@ -272,6 +272,8 @@ border: 5px solid rgba(255, 255, 255, 0.50);
   background-color: var(--white-color);
     padding: 18px 14px;
     display: inline-block;
+    margin-bottom: 100px;
+    margin-right: 110px;
    
 }
 .customers-say {
