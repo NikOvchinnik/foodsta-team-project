@@ -23,39 +23,40 @@
     <!-- Header Artem-->
     <header class="header">
       <div class="container header-container">
+        <a class="header-logo" href="./index.html"
+          ><img src="./images/logo.svg" alt="logo" width="66" height="52"
+        /></a>
         <nav class="header-nav">
-          <a class="header-logo" href="#"
-            ><img src="./images/logo.svg" alt="logo" width="66" height="52"
-          /></a>
           <ul class="header-menu">
-            <li class="header-item"><a class="header-link" href="#">Home</a></li>
-            <li class="header-item"><a class="header-link" href="#">About</a></li>
-            <li class="header-item"><a class="header-link" href="#">Service</a></li>
-            <li class="header-item"><a class="header-link" href="#">Menu</a></li>
-            <li class="header-item"><a class="header-link" href="#">Contact</a></li>
+            <li class="header-item"><a class="header-link link current" href="./index.html">Home</a></li>
+            <li class="header-item"><a class="header-link link" href="#">About</a></li>
+            <li class="header-item"><a class="header-link link" href="#">Service</a></li>
+            <li class="header-item"><a class="header-link link" href="#">Menu</a></li>
+            <li class="header-item"><a class="header-link link" href="#">Contact</a></li>
           </ul>
         </nav>
-        <button class="button" type="button">Order now</button>
+        <button class="header-btn" type="button">Order now</button>
       </div>
     </header>
     <!-- Hero Yurii-->
-    <section class="hero">
-      <div class="container hero-wrap">
-        <div class="hero-content">
-          <h1 class="hero-title">Enjoy Your Favorite Food From Anywhere</h1>
-          <p class="hero-text">
-            With just a few clicks, you can have your favorite meals delivered straight to your
-            doorstep, no matter where you are. Order now and enjoy a hassle-free and delicious meal
-            from the comfort of your own home.
-          </p>
-          <button type="button" class="hero-btn">Order Now</button>
+    <main>
+      <section class="hero">
+        <div class="container hero-wrap">
+          <div class="hero-content">
+            <h1 class="hero-title">Enjoy Your Favorite Food From Anywhere</h1>
+            <p class="hero-text">
+              With just a few clicks, you can have your favorite meals delivered straight to your
+              doorstep, no matter where you are. Order now and enjoy a hassle-free and delicious
+              meal from the comfort of your own home.
+            </p>
+            <button type="button" class="hero-btn">Order Now</button>
+          </div>
+          <div class="hero-block">
+            <img src="./images/dish1.png" alt="Meal" width="528" height="528" class="hero-img" />
+          </div>
         </div>
-        <div class="hero-block">
-          <img src="./images/dish1.png" alt="Meal" width="528" height="528" class="hero-img" />
-        </div>
-      </div>
-    </section>
-    <!-- Offerings Anastasia-->
+      </section>
+      <!-- Offerings Anastasia-->
     <section class="offerings">
       <div class="offerings-container container">
         <div class="offerings-img-border">
@@ -102,61 +103,75 @@
             </li>
           </ul>
           <button type="button" class="offerings-btn">Order Now</button>
+          </div>
         </div>
-      </div>
-    </section>
-    <!-- Favorites Ivan-->
-    <!-- Customers Say Sergiy-->
-    <!-- Subscribe Oleksiy-->
-    <section class="subscribe">
-      <div class="container subscribe-container">
-        <h2 class="subscribe-title">Subscribe To Get Special Offers</h2>
-        <p class="subscribe-text">
-          Order now and receive 10% off your first meal with Enjoy Your Favorite <br />
-          Food From Anywhere.
-        </p>
-        <form class="form">
-          <input class="form-input" type="text" placeholder="Enter your email" />
-          <button class="subscribe-btn" type="submit">Subscribe</button>
-        </form>
-      </div>
-    </section>
+      </section>
+      <!-- Favorites Ivan-->
+      <!-- Customers Say Sergiy-->
+      <!-- Subscribe Oleksiy-->
+      <section class="subscribe">
+        <div class="container subscribe-container">
+          <div class="subscribe-text-container">
+            <h2 class="subscribe-title">Subscribe To Get Special Offers</h2>
+            <p class="subscribe-text">
+              Order now and receive 10% off your first meal with Enjoy Your Favorite <br />
+              Food From Anywhere.
+            </p>
+            <form class="form">
+              <input class="form-input" type="text" placeholder="Enter your email" />
+              <button class="subscribe-btn" type="submit">Subscribe</button>
+            </form>
+          </div>
+          <div class="subscribe-img-container">
+            <img
+              src="./images/banan.png"
+              alt="banan"
+              width="608"
+              height="266"
+              class="subscribe-img"
+            />
+          </div>
+        </div>
+      </section>
+    </main>
     <!-- Footer Christina-->
-    <footer class="footer-content">
-      <div class="container">
-        <div class="logo-content">
-          <a class="footer-logo" href="#home"
-            ><img src="./images/logo.svg" alt="logo" width="66" height="52"
-          /></a>
-          <nav class="footer-nav">
-            <ul class="footer-nav-ul">
-              <li class="footer-nav-li">
-                <a class="footer-nav-link" href="#" target="_blank">Home</a>
-              </li>
-              <li class="footer-nav-li">
-                <a class="footer-nav-link" href="#" target="_blank">About</a>
-              </li>
-              <li class="footer-nav-li">
-                <a class="footer-nav-link" href="#" target="_blank">Service</a>
-              </li>
-              <li class="footer-nav-li">
-                <a class="footer-nav-link" href="#" target="_blank">Menu</a>
-              </li>
-              <li class="footer-nav-li">
-                <a class="footer-nav-link" href="#" target="_blank">Contact</a>
-              </li>
-            </ul>
-          </nav>
+    <footer class="footer">
+      <div class="container footer-container">
+        <div class="footer-content">
+          <div class="footer-nav-container">
+            <nav class="footer-nav">
+              <a class="footer-logo" href="./index.html"
+                ><img src="./images/logo.svg" alt="logo" width="66" height="52"
+              /></a>
+              <ul class="footer-nav-ul">
+                <li class="footer-nav-li">
+                  <a class="footer-nav-link" href="./index.html" target="_blank">Home</a>
+                </li>
+                <li class="footer-nav-li">
+                  <a class="footer-nav-link" href="#" target="_blank">About</a>
+                </li>
+                <li class="footer-nav-li">
+                  <a class="footer-nav-link" href="#" target="_blank">Service</a>
+                </li>
+                <li class="footer-nav-li">
+                  <a class="footer-nav-link" href="#" target="_blank">Menu</a>
+                </li>
+                <li class="footer-nav-li">
+                  <a class="footer-nav-link" href="#" target="_blank">Contact</a>
+                </li>
+              </ul>
+            </nav>
+          </div>
           <div class="footer-form-content">
             <form class="footer-form">
-              <h2 class="footer-form-tittle">Subscribe</h2>
+              <p class="footer-form-tittle">Subscribe</p>
               <input class="footer-input" type="text" placeholder="Enter your email" />
-              <button class="footer-click" type="submit">Subscribe</button>
+              <button class="footer-btn" type="submit">Subscribe</button>
             </form>
-            <p>
+            <p class="footer-form-text">
               By subscribing you agree to with our<a
                 class="footer-copyright-link"
-                href=""
+                href="#"
                 target="_blank"
               >
                 Privacy Policy</a
