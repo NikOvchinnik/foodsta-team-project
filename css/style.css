@@ -207,7 +207,9 @@ img {
   align-items: center;
   justify-content: center;
   border-radius: 550px;
-  border: 5px solid rgba(255, 255, 255, 0.5);
+  border: 5px solid rgba(255, 255, 255, 0.50);
+  position: relative;
+  top: 70px;
 }
 
 .offerings-img-container {
@@ -215,6 +217,13 @@ img {
   border-radius: 502px;
   width: 502px;
   height: 502px;
+  transform: translate();
+}
+.offerings-img {
+  position: absolute;
+  top: 50%;
+  right: 50%;
+  transform: translate(52%, -66%);
 }
 
 .offerings-text-container {
@@ -233,12 +242,31 @@ img {
   font-size: 16px;
   line-height: 1.5;
   max-width: 500px;
-  margin-bottom: 96px;
+  margin-bottom: 40px;
 }
 
 .offerings-list {
   display: flex;
   gap: 67px;
+}
+
+
+.offerings-icon-container {
+    width: 48px;
+    height: 48px;
+    background-color: var(--white-color);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 8px;
+}
+
+.offerings-icon {
+  width: 32px;
+  height: 32px;
+  fill: var(--link-color);
+  flex-shrink: 0;
 }
 
 .offerings-item-title {
@@ -260,7 +288,7 @@ img {
   padding: 10px 22px;
   font-size: 13px;
   font-weight: 500;
-  line-height: 1, 5;
+  line-height: 1.5;
   justify-content: center;
   align-items: center;
   border-radius: 30px;
@@ -268,6 +296,7 @@ img {
   background: var(--white-color);
   min-width: 106px;
   cursor: pointer;
+  margin-bottom: 79px;
 }
 
 .offerings-btn:hover,
