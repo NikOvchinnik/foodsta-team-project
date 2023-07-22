@@ -31,9 +31,11 @@ ol {
   padding-left: 0;
   margin: 0;
 }
+
 a {
   text-decoration: none;
 }
+
 img {
   display: block;
   max-width: 100%;
@@ -49,7 +51,7 @@ img {
 
 /**-------Header Artem-----**/
 .header {
-  box-shadow: 0px 4px 24px 0px rgba(105, 105, 105, 0.10);
+  box-shadow: 0px 4px 24px 0px rgba(105, 105, 105, 0.1);
 }
 
 .header-container {
@@ -66,9 +68,16 @@ img {
 }
 
 .header-link {
+  display: inline-block;
   color: var(--primary-text-color);
   padding-top: 28px;
   padding-bottom: 28px;
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.header-link:hover,
+.headre-link:focus {
+  color: var(--btn-color);
 }
 
 .header-logo {
@@ -82,7 +91,7 @@ img {
   margin-right: 30px;
 }
 
-.header-button {
+.header-btn {
   display: flex;
   border-radius: 30px;
   background: var(--btn-color);
@@ -97,6 +106,19 @@ img {
   cursor: pointer;
   font-family: inherit;
   min-width: 98px;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.header-btn:hover,
+.header-btn:focus {
+  background-color: var(--secondary-background-color);
+}
+
+.current {
+  position: relative;
+  color: var(--btn-color);
+  font-weight: 700;
+  text-decoration: underline;
 }
 
 /**-------Hero Yurii-----**/
@@ -106,7 +128,7 @@ img {
 }
 
 .hero-content {
-  padding-top: 159px;
+  padding-top: 145px;
 }
 
 .hero-title {
@@ -134,9 +156,12 @@ img {
   padding: 6px 18px;
   border-radius: 30px;
   background-color: var(--btn-color);
-  justify-content: center;
-  align-items: center;
   min-width: 98px;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.hero-btn:is(:hover, :focus) {
+  background-color: var(--secondary-background-color);
 }
 
 .hero-wrap {
@@ -171,13 +196,14 @@ img {
 }
 
 .offerings-img-border {
-width: 550px;
-height: 550px;
-display: flex;
-align-items: center;
-justify-content: center;
-border-radius: 550px;
-border: 5px solid rgba(255, 255, 255, 0.50);
+  width: 550px;
+  height: 550px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 550px;
+  border: 5px solid rgba(255, 255, 255, 0.5);
+  position: relative;
 }
 
 .offerings-img-container {
@@ -187,8 +213,17 @@ border: 5px solid rgba(255, 255, 255, 0.50);
   height: 502px;
 }
 
+.offerings-img {
+  width: 396px;
+  height: 502px;
+  border-radius: 262px;
+  position: absolute;
+  left: 84px;
+  bottom: 102px;
+}
+
 .offerings-text-container {
-  padding-top: 72px;
+  padding-top: 39px;
   margin-left: auto;
 }
 
@@ -203,7 +238,7 @@ border: 5px solid rgba(255, 255, 255, 0.50);
   font-size: 16px;
   line-height: 1.5;
   max-width: 500px;
-  margin-bottom: 96px;
+  margin-bottom: 40px;
 }
 
 .offerings-list {
@@ -211,11 +246,28 @@ border: 5px solid rgba(255, 255, 255, 0.50);
   gap: 67px;
 }
 
+.offerings-icon-container {
+  width: 48px;
+  height: 48px;
+  background-color: var(--white-color);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 8px;
+}
+
+.offerings-icon {
+  width: 32px;
+  height: 32px;
+  fill: var(--link-color);
+}
+
 .offerings-item-title {
   margin-bottom: 16px;
   font-size: 18px;
   line-height: 1.4;
-  width: 253px
+  width: 253px;
 }
 
 .offerings-item-text {
@@ -230,7 +282,7 @@ border: 5px solid rgba(255, 255, 255, 0.50);
   padding: 10px 22px;
   font-size: 13px;
   font-weight: 500;
-  line-height: 1,5;
+  line-height: 1.5;
   justify-content: center;
   align-items: center;
   border-radius: 30px;
@@ -238,21 +290,69 @@ border: 5px solid rgba(255, 255, 255, 0.50);
   background: var(--white-color);
   min-width: 106px;
   cursor: pointer;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .offerings-btn:hover,
 .offerings-btn:focus {
-  background: var(--btn-color);
-  border: none;
+  background-color: var(--btn-color);
+  border-color: var(--btn-color);
 }
 
 /**-------Favorites Ivan-----**/
-/**-------Customers Say Kristina-----**/
+.favorites {
+  padding-top: 100px;
+  padding-bottom: 100px;
+}
 
+.favorites-title {
+  text-align: center;
+  font-size: 42px;
+  margin-bottom: 20px;
+}
+
+.favorites-text {
+  text-align: center;
+  font-size: 16px;
+  margin-bottom: 40px;
+}
+
+.favorites-block {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 394px;
+  height: 397px;
+  border-radius: 197px;
+  border: 16px solid var(--secondary-background-color);
+}
+
+.favorites-link:hover .favorites-block {
+  border-color: var(--btn-color);
+}
+
+.favorites-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 32px;
+}
+
+.favorites-item {
+  width: calc((100% - 64px) / 3);
+}
+
+.favorites-images {
+  width: 315px;
+  height: 315px;
+  border-radius: 157.5px;
+}
+
+/**-------Customers Say Kristina-----**/
 .customers {
   background: var(--secondary-background-color);
-  
 }
+
 .customers-tittle {
   color: var(--primary-text-color);
     font-size: 42px;
@@ -260,14 +360,15 @@ border: 5px solid rgba(255, 255, 255, 0.50);
     line-height: normal;
     margin-bottom: 20px;
     padding-top: 100px;
-    
 }
+
 .customers-text {
   color: var(--primary-text-color);
     font-size: 16px;
     line-height: normal;
     margin-bottom: 32px;
 }
+
 .customers-li {
   width: 501px;
   background-color: var(--white-color);
@@ -280,15 +381,16 @@ border: 5px solid rgba(255, 255, 255, 0.50);
     font-weight: 700;
     line-height: normal;
 }
+
 .stars-icons {
 margin-bottom: 28px;
 }
+
 .customers-cont {
   margin-top: 44px;
-  
 }
+
 .customers-name {
-  
 }
 
 /**-------Subscribe Oleksiy-----**/
@@ -331,37 +433,42 @@ margin-bottom: 28px;
   border: none;
   background-color: var(--btn-color);
   min-width: 103px;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .subscribe-btn:hover,
-:focus {
+.subscribe-btn:focus {
   background-color: var(--secondary-background-color);
 }
 
-.form-input {
+.subscribe-input {
   height: 42px;
-  min-width: 395px;
+  width: 395px;
   padding: 12px 57px 12px 12px;
   align-items: center;
   border-radius: 30px;
   border: 0.854px solid var(--secondary-background-color);
-  background-color: var(--background-color);
+  background-color: transparent;
   margin-right: 32px;
+  font-size: 12px;
+  line-height: 1.25;
+  color: var(--form-color);
+  outline: transparent;
 }
 
-.form-input::placeholder {
+.subscribe-input::placeholder {
   color: var(--form-color);
-  font-family: Roboto;
   font-size: 12px;
   line-height: 1.5;
 }
 
 .subscribe-img-container {
+  width: 608px;
+  height: 266px;
   margin-left: auto;
 }
 
-
-/**-------Footer Christina-----**/
+/**-------Footer Kristina-----**/
 .footer {
   background: var(--white-color);
   box-shadow: 0px -4px 24px 0px rgba(105, 105, 105, 0.1);
@@ -374,12 +481,12 @@ margin-bottom: 28px;
   margin: 0 auto;
   background: var(--white-color);
   background-image: url(../images/footer-1.png), url(../images/footer-2.png),
-    url(../images/footer-3.png), url(../images/footer-7.png), url(../images/footer-4.png), url(../images/footer-5.png),
-    url(../images/footer-6.png), url(../images/footer-8.png);
+    url(../images/footer-3.png), url(../images/footer-7.png), url(../images/footer-4.png),
+    url(../images/footer-5.png), url(../images/footer-6.png), url(../images/footer-8.png);
   background-repeat: no-repeat;
   block-size: cover;
-  background-position: bottom left 216px, bottom left 340px, bottom right 134px, bottom right 450px, bottom left 53px,
-    bottom right 282px, bottom left 280px, bottom right 16px;
+  background-position: bottom left 216px, bottom left 340px, bottom right 134px, bottom right 450px,
+    bottom left 53px, bottom right 282px, bottom left 280px, bottom right 16px;
 }
 
 .footer-content {
@@ -405,6 +512,7 @@ margin-bottom: 28px;
 
 .footer-nav-link {
   color: var(--primary-text-color);
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .footer-nav-link:hover,
@@ -424,14 +532,25 @@ margin-bottom: 28px;
 
 .footer-input {
   height: 42px;
+  width: 279px;
   padding: 12px 61.5px 12px 12px;
   align-items: center;
   border-radius: 30px;
   border: 0.854px solid var(--secondary-background-color);
-  background: var(--background-color);
+  background-color: transparent;
   margin-bottom: 12px;
   margin-right: 13px;
   min-width: 279px;
+  font-size: 12px;
+  line-height: 1.25;
+  color: var(--form-color);
+  outline: transparent;
+}
+
+.footer-input::placeholder {
+  color: var(--form-color);
+  font-size: 12px;
+  line-height: 1.25;
 }
 
 .footer-btn {
@@ -446,13 +565,16 @@ margin-bottom: 28px;
   font-family: inherit;
   font-size: 13px;
   font-weight: 500;
-  line-height: 1,5;
+  line-height: 1, 5;
   cursor: pointer;
+  transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.footer-click:focus,
-.footer-click:hover {
+.footer-btn:focus,
+.footer-btn:hover {
   background-color: var(--btn-color);
+  border-color: var(--btn-color);
 }
 
 .footer-form-text {
@@ -468,10 +590,12 @@ margin-bottom: 28px;
   display: flex;
   gap: 20px;
 }
+
 .footer-copyright-link {
   color: var(--link-color);
   font-size: 12px;
   text-decoration-line: underline;
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .footer-copyright-link:focus,
@@ -479,7 +603,7 @@ margin-bottom: 28px;
   color: var(--form-color);
 }
 
-.paragraph {
+.footer-paragraph {
   color: var(--primary-text-color);
   font-size: 12px;
   margin-left: auto;
