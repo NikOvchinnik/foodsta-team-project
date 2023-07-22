@@ -350,47 +350,71 @@ img {
 
 /**-------Customers Say Kristina-----**/
 .customers {
+  padding-top: 100px;
+  padding-bottom: 100px;
   background: var(--secondary-background-color);
 }
 
-.customers-tittle {
-  color: var(--primary-text-color);
-    font-size: 42px;
-    font-weight: 700;
-    line-height: normal;
-    margin-bottom: 20px;
-    padding-top: 100px;
+.customers-title {
+  font-size: 42px;
+  margin-bottom: 20px;
 }
 
 .customers-text {
-  color: var(--primary-text-color);
-    font-size: 16px;
-    line-height: normal;
-    margin-bottom: 32px;
+  font-size: 16px;
+  margin-bottom: 32px;
+}
+
+.customers-ul {
+  display: flex;
+  gap: 139px;
+  flex-wrap: wrap;
 }
 
 .customers-li {
+  width: calc((100% - 139px) / 2);
+}
+
+.customers-comment-container {
   width: 501px;
-  background-color: var(--white-color);
-    padding: 18px 14px;
-    display: inline-block;
-    margin-bottom: 100px;
-    margin-right: 110px;
-  color: var(--primary-text-color);
-    font-size: 18px;
-    font-weight: 700;
-    line-height: normal;
+  background-color: var(--background-color);
+  padding: 14px 14px 16px 14px;
+  border-radius: 0px 30px 30px 30px;
 }
 
-.stars-icons {
-margin-bottom: 28px;
+.customers-icon {
+  fill: var(--secondary-background-color);
+  width: 16px;
+  height: 16px;
+  margin-bottom: 28px;
 }
 
-.customers-cont {
-  margin-top: 44px;
+.customers-comment {
+  font-size: 18px;
+  font-weight: 700;
+  margin-bottom: 42px;
+}
+
+.customers-card {
+  display: flex;
+}
+
+.customers-card-img {
+  margin-right: 16px;
+}
+
+.customers-card-text {
+  border-right: 1px solid var(--link-color);
+  padding-right: 16px;
 }
 
 .customers-name {
+  font-weight: 500;
+  line-height: 1.5;
+}
+
+.customers-position {
+  line-height: 1.5;
 }
 
 /**-------Subscribe Oleksiy-----**/
